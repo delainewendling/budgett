@@ -20,6 +20,7 @@ namespace Budgett.Models
     public bool IsExpense { get; set; }
     
     [Required]
+    [DataType(DataType.Date)]
     public DateTime DateEntered {get;set;}
 
     [Required]

@@ -16,6 +16,7 @@ namespace Budgett.Models
     }
 
     [Required]
+    [DataType(DataType.Date)]
     public DateTime DateCreated {get;set;}
 
     [Required]
