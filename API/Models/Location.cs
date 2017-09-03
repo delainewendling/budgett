@@ -16,6 +16,6 @@ namespace Budgett.Models
     [Required]
     public string Address {get;set;}
 
-    ICollection<Transaction> Transactions {get;set;}
+    public virtual ICollection<Transaction> Transactions {get;set;}
   }
 }

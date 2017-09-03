@@ -13,6 +13,6 @@ namespace Budgett.Models
     [Required]
     public string Name { get; set; }
     
-    ICollection<Transaction> Transactions {get;set;}
+    public virtual ICollection<Transaction> Transactions {get;set;}
   }
 }

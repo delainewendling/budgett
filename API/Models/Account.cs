@@ -13,8 +13,8 @@ namespace Budgett.Models
     [Required]
     public string Name { get; set; }
     
-    ICollection<User> Users {get;set;}
-    ICollection<Goal> Goals {get;set;}
-    ICollection<UserAccount> UserAccount {get;set;}
+    public virtual ICollection<User> Users {get;set;}
+    public virtual ICollection<Goal> Goals {get;set;}
+    public virtual ICollection<UserAccount> UserAccount {get;set;}
   }
 }
