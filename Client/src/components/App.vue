@@ -1,15 +1,17 @@
 <template>
     <div> 
-        <h1> {{message}} </h1> 
+        <side-nav></side-nav>
     </div>
 </template>
 
 <script>
+    import SideNav from './SideNav.vue';
     export default {
         data() {
             return {
                 message: "Hello World"
             }
-        }
+        },
+        components: {SideNav}
     }
 </script>
