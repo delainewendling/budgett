@@ -10,11 +10,11 @@ using Microsoft.EntityFrameworkCore;
 
 namespace budgett.Controllers
 {
-    public class TransactionsController : Controller
+    public class TransactionController : Controller
     {
         private BudgettContext _context;
 
-        public TransactionsController(BudgettContext ctx)
+        public TransactionController(BudgettContext ctx)
         {
             _context = ctx;
         }
