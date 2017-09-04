@@ -30,7 +30,7 @@
         margin-left: 4px;
         height: 20px;
         width: 20px;
-        margin-bottom: 60px;
+        margin-bottom: 40px;
     }
 
     .sidebar-icon {
