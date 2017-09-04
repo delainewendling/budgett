@@ -8,4 +8,4 @@ obj
 *.sqlite3
 .vscode
 API/Migrations/
-
+.DS_Store
