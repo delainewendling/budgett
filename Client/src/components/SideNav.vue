@@ -4,6 +4,7 @@
         width: 60px;
         height: 900px;
         background-color: #153b50;
+        z-index: 2000;
     }
     li {
         padding-left: 20px;
@@ -36,28 +37,30 @@
 </style>
 
 <template>
-    <nav class="menu">
-        <ul>
-            <li>
-                <img class="budgett-logo" src="../../images/BudgettLogo.png">
-            </li>
-            <li :class="{active: route === '/insights', 'sidebar-icon': true, 'insights-icon': true}" @click="changeActive('/insights')">
-                <a href="/#/insights">
-                    <img src="../../images/InsightsIcon.png">
-                </a>
-            </li>
-            <li :class="{active: route === '/transactions', 'sidebar-icon': true}" class="sidebar-icon" @click="changeActive('/transactions')">
-                <a href="/#/transactions">
-                    <img src="../../images/TransactionsIcon.png">
-                </a>
-            </li>
-            <li :class="{active: route === '/settings', 'sidebar-icon': true}" class="sidebar-icon" @click="changeActive('/settings')">
-                <a href="/#/settings">
-                    <img src="../../images/SettingsIcon.png">
-                </a>
-            </li>
-        </ul>
-    </nav>
+    <div>
+        <nav class="menu">
+            <ul>
+                <li>
+                    <img class="budgett-logo" src="../../images/BudgettLogo.png">
+                </li>
+                <li :class="{active: route === '/insights', 'sidebar-icon': true, 'insights-icon': true}" @click="changeActive('/insights')">
+                    <a href="/#/insights">
+                        <img src="../../images/InsightsIcon.png">
+                    </a>
+                </li>
+                <li :class="{active: route === '/transactions', 'sidebar-icon': true}" class="sidebar-icon" @click="changeActive('/transactions')">
+                    <a href="/#/transactions">
+                        <img src="../../images/TransactionsIcon.png">
+                    </a>
+                </li>
+                <li :class="{active: route === '/settings', 'sidebar-icon': true}" class="sidebar-icon" @click="changeActive('/settings')">
+                    <a href="/#/settings">
+                        <img src="../../images/SettingsIcon.png">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
 </template>
 
 <script>
