@@ -4,6 +4,7 @@
         width: 60px;
         height: 100%;
         background-color: #153b50;
+        z-index: 2000;
         display: block;
     }
 
@@ -47,6 +48,7 @@
 </style>
 
 <template>
+  <div>
     <nav class="menu">
         <ul>
             <li>

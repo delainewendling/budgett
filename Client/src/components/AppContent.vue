@@ -1,5 +1,5 @@
 <template>
-    <div class="row">
+     <div class="row">
         <transaction-list></transaction-list>
         <transaction-content></transaction-content>
     </div>
